@@ -7,7 +7,7 @@ import os
 #     api_key='ollama'
 # )
 client = Client()
-MODEL_NAME = "llama3.2"
+MODEL_NAME = "qwen2"
 
 # Define input prompt template for the task
 def build_input_prompt(animal_statement):
@@ -78,7 +78,7 @@ score = sum(grades) / len(grades) * 100
 def save_output_score():
     os.makedirs('files/', exist_ok=True)
 
-    output_path = os.path.join('files', 'code_grading.txt')
+    output_path = os.path.join('files', 'code-based-grading-qwen2.txt')
     
     with open(output_path, 'w', encoding="utf-8") as f:
         f.write(f"Outputs\n{output_result}\n\nGrading Score\nActual Score: {score}%\nRounded Score: {score:.2f}%")
