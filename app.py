@@ -1,33 +1,16 @@
 import asyncio
 from ollama import AsyncClient
 
-
-prompt ="""
-You are an expert Tech Support.
-
-Give me the specifications of this machine you are installed on in terms of:
-
-JSON Schema:
-{
-    "type": "array",
-    "properties": {
-        "os": {"type": "string"},
-        "ram": {"type": "string"},
-        "gpu": {"type": "string"},
-        "cpu": {"type": "string"},
-    }
-    "required": ["os", "ram", "cpu"]
-}
-"""
-
 async def chatbot():
-    message={'role': 'user', 'content': 'Why is the sky blue?'}
+    message={'role': 'user', 'content': 'You are an expert software engineer with deep focus in C, Python and Drone building. \
+            How do I begin to build a drone with $0 budget and little C knowledge?'}
     response = await AsyncClient.chat(
+        self=AsyncClient(),
         model='llama3.2',
         messages=[message],
     )
     print(response['message']['content'], end='', flush=True)
-        
+
 asyncio.run(chatbot())
     
     
