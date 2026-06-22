@@ -2,15 +2,29 @@
 
 ---
 
+## Prerequisites
+
+* Ollama should be installed and running on your machine.
+* Pull a model to use: `ollama pull <model name>` e.g. `ollama pull llama3.5`
+  * I am using `llama3.2` and `qwen2` My machine's limit is 7B models at best
+
+## Install
+
+```bash
+  pip install ollama
+```
+
+---
+
 ## A Practical Roadmap and Timeline
 
-- Improve prompt engineering fundamentals (1 week)
-- Learn **Pydantic** + **JSON Schema** (1 week)
-- Learn structured outputs and tool calling (1–2 weeks)
-- Build a small RAG project (2 weeks)
-- Learn LangGraph agent workflows (2–3 weeks)
-- Add evaluation and tracing (LangSmith/Weave)
-- Build a production-grade AI assistant (Hackathons Assistant)
+* Improve prompt engineering fundamentals (1 week)
+* Learn **Pydantic** + **JSON Schema** (1 week)
+* Learn structured outputs and tool calling (1–2 weeks)
+* Build a small RAG project (2 weeks)
+* Learn LangGraph agent workflows (2–3 weeks)
+* Add evaluation and tracing (LangSmith/Weave)
+* Build a production-grade AI assistant (Hackathons Assistant)
 
 ---
 
