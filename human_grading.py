@@ -32,7 +32,7 @@ def load_eval_file(filename):
         return [json.loads(line) for line in f]
 
 
-cases = load_eval_file("planning.jsonl")
+cases = load_eval_file("email_writing.jsonl")
 # print(type(cases))
 # print(cases[1])
 
