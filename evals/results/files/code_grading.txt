@@ -1,0 +1,17 @@
+Outputs
+Animal Statement: The animal is a human.
+Golden Answer: 2
+Output: 2
+
+Animal Statement: The animal is a snake.
+Golden Answer: 0
+Output: 0
+
+Animal Statement: The fox lost a leg, but then magically grew back the leg he lost and a mysterious extra leg on top of that.
+Golden Answer: 5
+Output: 3
+
+
+Grading Score
+Actual Score: 66.66666666666666%
+Rounded Score: 66.67%
